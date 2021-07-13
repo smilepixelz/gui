@@ -1,0 +1,194 @@
+local MelonSpec = Instance.new("ScreenGui")
+local GuiToolsUiGradientOutline = Instance.new("ImageLabel")
+local UIGradient = Instance.new("UIGradient")
+local GuiToolsUiMainFrame = Instance.new("ImageLabel")
+local UIGradient_2 = Instance.new("UIGradient")
+local MelonSettingsText = Instance.new("TextLabel")
+local SettingsAuraDisable = Instance.new("TextButton")
+local SettingsFullHeal = Instance.new("TextButton")
+local SettingsInfHealthRegen = Instance.new("TextButton")
+local ExtraGuiToolsFiller = Instance.new("ImageLabel")
+local ExtraGuiToolsFillerText = Instance.new("TextLabel")
+local MelonChangelog = Instance.new("TextLabel")
+local MelonMovelist = Instance.new("TextLabel")
+local DesignTextSplitter = Instance.new("ImageLabel")
+
+MelonSpec.Name = "MelonSpec"
+MelonSpec.Parent = game.Players.LocalPlayer:WaitForChild("PlayerGui")
+
+GuiToolsUiGradientOutline.Name = "GuiTools/UiGradientOutline"
+GuiToolsUiGradientOutline.Parent = MelonSpec
+GuiToolsUiGradientOutline.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+GuiToolsUiGradientOutline.BackgroundTransparency = 1.000
+GuiToolsUiGradientOutline.Position = UDim2.new(0.0457774289, 0, 0.200000003, 0)
+GuiToolsUiGradientOutline.Size = UDim2.new(0, 524, 0, 660)
+GuiToolsUiGradientOutline.Image = "rbxassetid://3570695787"
+GuiToolsUiGradientOutline.ScaleType = Enum.ScaleType.Slice
+GuiToolsUiGradientOutline.SliceCenter = Rect.new(100, 100, 100, 100)
+GuiToolsUiGradientOutline.SliceScale = 0.120
+
+UIGradient.Color = ColorSequence.new{ColorSequenceKeypoint.new(0.00, Color3.fromRGB(100, 255, 28)), ColorSequenceKeypoint.new(1.00, Color3.fromRGB(0, 255, 127))}
+UIGradient.Parent = GuiToolsUiGradientOutline
+
+GuiToolsUiMainFrame.Name = "GuiTools/UiMainFrame"
+GuiToolsUiMainFrame.Parent = MelonSpec
+GuiToolsUiMainFrame.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+GuiToolsUiMainFrame.BackgroundTransparency = 1.000
+GuiToolsUiMainFrame.BorderColor3 = Color3.fromRGB(40, 53, 38)
+GuiToolsUiMainFrame.Position = UDim2.new(0.0513022877, 0, 0.207486629, 0)
+GuiToolsUiMainFrame.Size = UDim2.new(0, 508, 0, 645)
+GuiToolsUiMainFrame.Image = "rbxassetid://3570695787"
+GuiToolsUiMainFrame.ImageColor3 = Color3.fromRGB(167, 255, 173)
+GuiToolsUiMainFrame.ScaleType = Enum.ScaleType.Slice
+GuiToolsUiMainFrame.SliceCenter = Rect.new(100, 100, 100, 100)
+GuiToolsUiMainFrame.SliceScale = 0.120
+
+UIGradient_2.Parent = GuiToolsUiMainFrame
+
+MelonSettingsText.Name = "MelonSettingsText"
+MelonSettingsText.Parent = MelonSpec
+MelonSettingsText.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+MelonSettingsText.BackgroundTransparency = 1.000
+MelonSettingsText.Position = UDim2.new(0.167420819, 0, 0.207486629, 0)
+MelonSettingsText.Size = UDim2.new(0, 200, 0, 50)
+MelonSettingsText.Font = Enum.Font.PermanentMarker
+MelonSettingsText.Text = "MELON SETTINGS"
+MelonSettingsText.TextColor3 = Color3.fromRGB(0, 255, 0)
+MelonSettingsText.TextSize = 40.000
+
+SettingsAuraDisable.Name = "Settings/AuraDisable"
+SettingsAuraDisable.Parent = MelonSpec
+SettingsAuraDisable.BackgroundColor3 = Color3.fromRGB(167, 255, 173)
+SettingsAuraDisable.BorderColor3 = Color3.fromRGB(149, 227, 154)
+SettingsAuraDisable.BorderSizePixel = 5
+SettingsAuraDisable.Position = UDim2.new(0.0580693819, 0, 0.270588249, 0)
+SettingsAuraDisable.Size = UDim2.new(0, 200, 0, 50)
+SettingsAuraDisable.Font = Enum.Font.PermanentMarker
+SettingsAuraDisable.Text = "AURA DISABLE"
+SettingsAuraDisable.TextColor3 = Color3.fromRGB(0, 0, 0)
+SettingsAuraDisable.TextSize = 30.000
+
+SettingsFullHeal.Name = "Settings/FullHeal"
+SettingsFullHeal.Parent = MelonSpec
+SettingsFullHeal.BackgroundColor3 = Color3.fromRGB(167, 255, 173)
+SettingsFullHeal.BorderColor3 = Color3.fromRGB(149, 227, 154)
+SettingsFullHeal.BorderSizePixel = 5
+SettingsFullHeal.Position = UDim2.new(0.276772261, 0, 0.270588249, 0)
+SettingsFullHeal.Size = UDim2.new(0, 200, 0, 50)
+SettingsFullHeal.Font = Enum.Font.PermanentMarker
+SettingsFullHeal.Text = "FULL HEAL"
+SettingsFullHeal.TextColor3 = Color3.fromRGB(0, 0, 0)
+SettingsFullHeal.TextSize = 30.000
+
+SettingsInfHealthRegen.Name = "Settings/InfHealthRegen"
+SettingsInfHealthRegen.Parent = MelonSpec
+SettingsInfHealthRegen.BackgroundColor3 = Color3.fromRGB(167, 255, 173)
+SettingsInfHealthRegen.BorderColor3 = Color3.fromRGB(149, 227, 154)
+SettingsInfHealthRegen.BorderSizePixel = 5
+SettingsInfHealthRegen.Position = UDim2.new(0.149321288, 0, 0.356149733, 0)
+SettingsInfHealthRegen.Size = UDim2.new(0, 230, 0, 50)
+SettingsInfHealthRegen.Font = Enum.Font.PermanentMarker
+SettingsInfHealthRegen.Text = "INF HEALTH REGEN"
+SettingsInfHealthRegen.TextColor3 = Color3.fromRGB(0, 0, 0)
+SettingsInfHealthRegen.TextSize = 30.000
+
+ExtraGuiToolsFiller.Name = "ExtraGuiTools/Filler"
+ExtraGuiToolsFiller.Parent = MelonSpec
+ExtraGuiToolsFiller.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+ExtraGuiToolsFiller.BackgroundTransparency = 1.000
+ExtraGuiToolsFiller.Position = UDim2.new(0.224333078, 0, 0.260962576, 0)
+ExtraGuiToolsFiller.Size = UDim2.new(0, 55, 0, 72)
+ExtraGuiToolsFiller.Image = "rbxassetid://3570695787"
+ExtraGuiToolsFiller.ImageColor3 = Color3.fromRGB(0, 255, 0)
+ExtraGuiToolsFiller.ScaleType = Enum.ScaleType.Slice
+ExtraGuiToolsFiller.SliceCenter = Rect.new(100, 100, 100, 100)
+ExtraGuiToolsFiller.SliceScale = 0.120
+
+ExtraGuiToolsFillerText.Name = "ExtraGuiTools/FillerText"
+ExtraGuiToolsFillerText.Parent = MelonSpec
+ExtraGuiToolsFillerText.BackgroundColor3 = Color3.fromRGB(0, 255, 0)
+ExtraGuiToolsFillerText.BorderColor3 = Color3.fromRGB(27, 42, 53)
+ExtraGuiToolsFillerText.BorderSizePixel = 0
+ExtraGuiToolsFillerText.Position = UDim2.new(0.224333078, 0, 0.270588249, 0)
+ExtraGuiToolsFillerText.Size = UDim2.new(0, 55, 0, 50)
+ExtraGuiToolsFillerText.Font = Enum.Font.PermanentMarker
+ExtraGuiToolsFillerText.Text = "-"
+ExtraGuiToolsFillerText.TextColor3 = Color3.fromRGB(0, 0, 0)
+ExtraGuiToolsFillerText.TextSize = 40.000
+
+MelonChangelog.Name = "Melon/Changelog"
+MelonChangelog.Parent = MelonSpec
+MelonChangelog.BackgroundColor3 = Color3.fromRGB(160, 255, 133)
+MelonChangelog.BorderColor3 = Color3.fromRGB(0, 255, 0)
+MelonChangelog.BorderSizePixel = 3
+MelonChangelog.Position = UDim2.new(0.0580693819, 0, 0.454545468, 0)
+MelonChangelog.Size = UDim2.new(0, 223, 0, 405)
+MelonChangelog.Font = Enum.Font.PermanentMarker
+MelonChangelog.Text = [[
+Melon Spec v1 [Beta]:
+Nothing Yet...
+]]
+
+MelonChangelog.TextColor3 = Color3.fromRGB(0, 0, 0)
+MelonChangelog.TextSize = 25.000
+MelonChangelog.TextWrapped = true
+MelonChangelog.TextYAlignment = Enum.TextYAlignment.Top
+
+MelonMovelist.Name = "Melon/Movelist"
+MelonMovelist.Parent = MelonSpec
+MelonMovelist.BackgroundColor3 = Color3.fromRGB(160, 255, 133)
+MelonMovelist.BorderColor3 = Color3.fromRGB(0, 255, 0)
+MelonMovelist.BorderSizePixel = 3
+MelonMovelist.Position = UDim2.new(0.259426862, 0, 0.454545468, 0)
+MelonMovelist.Size = UDim2.new(0, 223, 0, 405)
+MelonMovelist.Font = Enum.Font.PermanentMarker
+MelonMovelist.Text = [[
+Most likely Testing... No Current Moveset Available
+]]
+MelonMovelist.TextColor3 = Color3.fromRGB(0, 0, 0)
+MelonMovelist.TextSize = 25.000
+MelonMovelist.TextWrapped = true
+MelonMovelist.TextYAlignment = Enum.TextYAlignment.Top
+
+DesignTextSplitter.Name = "Design/TextSplitter"
+DesignTextSplitter.Parent = MelonSpec
+DesignTextSplitter.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+DesignTextSplitter.BackgroundTransparency = 1.000
+DesignTextSplitter.Position = UDim2.new(0.241467774, 0, 0.454545468, 0)
+DesignTextSplitter.Size = UDim2.new(0, 11, 0, 405)
+DesignTextSplitter.Image = "rbxassetid://3570695787"
+DesignTextSplitter.ImageColor3 = Color3.fromRGB(0, 255, 0)
+DesignTextSplitter.ScaleType = Enum.ScaleType.Slice
+DesignTextSplitter.SliceCenter = Rect.new(100, 100, 100, 100)
+DesignTextSplitter.SliceScale = 0.120
+
+SettingsAuraDisable.MouseButtonUp:Connect(function()
+joe = false
+end
+
+SettingsFullHeal.MouseButtonUp:Connect(function()
+local args = {
+    [1] = Player.Character.Head.CFrame,
+    [2] = math.huge,
+    [3] = "rbxassetid://1202656211",
+    [4] = 1.8,
+    [5] = 0.2,
+}
+
+game:GetService("ReplicatedStorage").Heal:FireServer(unpack(args))
+end
+
+SettingsInfHealthRegen.MouseButtonUp:Connect(function()
+local regentime = 4
+repeat wait(regentime)
+local args = {
+    [1] = Player.Character.Head.CFrame,
+    [2] = math.huge,
+    [3] = "rbxassetid://1202656211",
+    [4] = 1.8,
+    [5] = 0.2,
+}
+
+game:GetService("ReplicatedStorage").Heal:FireServer(unpack(args))
+until joe2 == false
+end
